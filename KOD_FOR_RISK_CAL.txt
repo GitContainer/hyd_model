@@ -1,0 +1,99 @@
+def cal(Max_GRID_C) :
+ if 0<=Max_GRID_C<0.5 :
+  fr500=0.5*Max_GRID_C
+ elif 0.5<=Max_GRID_C<1 :
+  fr500=0.4-(3-3*Max_GRID_C)/10
+ elif 1<=Max_GRID_C<1.5 :
+  fr500=0.5-(1.5-Max_GRID_C)/5
+ elif 1.5<=Max_GRID_C<2 :
+  fr500=0.6-(2-Max_GRID_C)/5
+ elif 2<=Max_GRID_C<3 :
+  fr500=0.3+0.15*Max_GRID_C 
+ elif 3<=Max_GRID_C<4 :
+  fr500=0.45+0.1*Max_GRID_C
+ elif 4<=Max_GRID_C<5 :
+  fr500=0.45+0.1*Max_GRID_C
+ elif 5<=Max_GRID_C<6 :
+  fr500=0.7+0.05*Max_GRID_C
+ else :
+  fr500==1
+ return fr500
+
+def cal(Category, Area, fr500) :
+  if Category=="Konut":
+   dam500=Area*fr500*694*1.18*.6*.5
+  elif Category=="Akaryakýt":
+   dam500=Area*fr500*694*1.18*.6*.5
+  elif Category=="Akvaryum":
+   dam500=Area*fr500*882*1.18*.6*.5
+  elif Category=="Askeri":
+   dam500=Area*fr500*1425*1.18*.6*.5
+  elif Category=="Dini":
+   dam500=Area*fr500*882*1.18*.6*.5
+  elif Category=="Eczane":
+   dam500=Area*fr500*838*1.18*.6*.5
+  elif Category=="Egitim":
+   dam500=Area*fr500*838*1.18*.6*.5
+  elif Category=="Farm":
+   dam500=Area*fr500*198*1.18*.6*.5
+  elif Category=="Okul":
+   dam500=Area*fr500*838*1.18*.6*.5
+  elif Category=="Park":
+   dam500=Area*fr500*133*1.18*.6*.5
+  elif Category=="Resmi":
+   dam500=Area*fr500*1021*1.18*.6*.5
+  elif Category=="Restaurant":
+   dam500=Area*fr500*838*1.18*.6*.5
+  elif Category=="Saglik":
+   dam500=Area*fr500*1764*1.18*.6*.5
+  elif Category=="Spor":
+   dam500=Area*fr500*1021*1.18*.6*.5
+  elif Category=="Ticaret":
+   dam500=Area*fr500*694*1.18*.6*.5
+  elif Category=="Train Station":
+   dam500=Area*fr500*1021*1.18*.6*.5
+  elif Category=="Veterinarian":
+   dam500=Area*fr500*882*1.18*.6*.5
+  else :
+   dam500=0
+  return dam500
+
+
+def cal(Category, Area, fr500) :
+  if Category=="Konut":
+   con500=Area*fr500*694*1.18*.6*.5*0.5
+  elif Category=="Akaryakýt":
+   con500=Area*fr500*694*1.18*.6*.5*1.5
+  elif Category=="Akvaryum":
+   con500=Area*fr500*882*1.18*.6*.5*1
+  elif Category=="Askeri":
+   con500=Area*fr500*1425*1.18*.6*.5*1
+  elif Category=="Dini":
+   con500=Area*fr500*882*1.18*.6*.5*1
+  elif Category=="Eczane":
+   con500=Area*fr500*838*1.18*.6*.5*1
+  elif Category=="Egitim":
+   con500=Area*fr500*838*1.18*.6*.5*1
+  elif Category=="Farm":
+   con500=Area*fr500*198*1.18*.6*.5*0.5
+  elif Category=="Okul":
+   con500=Area*fr500*838*1.18*.6*.5*1
+  elif Category=="Park":
+   con500=Area*fr500*133*1.18*.6*.5*0.5
+  elif Category=="Resmi":
+   con500=Area*fr500*1021*1.18*.6*.5*1.5
+  elif Category=="Restaurant":
+   con500=Area*fr500*838*1.18*.6*.5*1
+  elif Category=="Saglik":
+   con500=Area*fr500*1764*1.18*.6*.5*1.5
+  elif Category=="Spor":
+   con500=Area*fr500*1021*1.18*.6*.5*1
+  elif Category=="Ticaret":
+   con500=Area*fr500*694*1.18*.6*.5*1
+  elif Category=="Train Station":
+   con500=Area*fr500*1021*1.18*.6*.5*1.5
+  elif Category=="Veterinarian":
+   con500=Area*fr500*882*1.18*.6*.5*1
+  else :
+   con500=0
+  return con500
